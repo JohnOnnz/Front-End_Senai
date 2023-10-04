@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css/estilo.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+
+        <h1>Tela De Cadastro</h1>
+
+    </header>
+    <form action="arquivo.php" method="get" class="cadastro"> 
+
+
+ 
+        <FIeldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="campo_100">
+                <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required placeholder="Digite Seu Nome">
+            </div>
+
+            <div class="campo_50">
+                <div>
+                    <label for="date">Nascimento</label>
+                    <input type="date" id="date" required >
+                </div>
+                <div>
+                    <label for="tell">Contato</label>
+                    <input type="tel" id="tell" placeholder="   (XX) XXXX - XXXX">
+                </div>
+            </div>
+
+            <div class="campo_100">
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" name="mail" placeholder="Digite seu E-mail">
+            </div>
+
+        </FIeldset> 
+
+
+
+
+
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <div class="campo_100">
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+                </div>
+    
+                <dev>
+                    <label for="adress">Endereço</label>
+                    <input type="text" id="adress" name="adress" placeholder="Digite Seu Endereço">
+                </dev>
+            </div>
+
+            <div class="campo_50">
+                <div>
+                    <label for="house">número</label>
+                    <input type="text" id="house" name="house">
+                </div>
+                <div>
+                    <label for="comp">Complemento</label>
+                    <input type="text" id="comp" name="comp">
+                </div>
+            </div>
+
+            <div class="campo_100">
+                <label for="bai">Bairro</label>
+                <input type="text" id="bai" name="Bairro" placeholder="Digite Seu Bairro" required>
+            </div>
+
+            <div class="campo_50">
+                <div>
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div>
+                    <label for="estado">Selecione o Estado:</label>
+                    <select id="estado" name="uf">
+                        <option value="0">Escolha um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+            
+        </fieldset>
+
+        
+        <fieldset>
+
+            <div class="campo_1"><input type="submit" id="btn_submit" value="enviar!"></div>
+
+        </fieldset>
+
+        <footer>
+            
+            <h5>Erick John Oliveira Lima , Tela ™ cadastro</h5>
+        
+        </footer>
+
+
+    </form>
+
+    <script src="/script/script.js"></script>
+    <script src="/script/scriptAsyinc.js"></script>
+</body>
+</html>
